@@ -1,0 +1,29 @@
+/* App-specific styles */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff69b4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1493;
+}
