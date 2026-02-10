@@ -5,30 +5,33 @@ import Card from './Card';
  * Memory Gallery Page with photo cards
  */
 const MemoryGallery = ({ onNext }) => {
+  // Get base URL for deployment (handles subdirectory deployments)
+  const baseUrl = import.meta.env.BASE_URL;
+  
   // Images from public folder with romantic captions
   const memories = [
     { 
-      image: '/pic-1.jpeg', 
+      image: `${baseUrl}pic-1.jpeg`, 
       caption: 'Journey started at 2019  still together 💕' 
     },
     { 
-      image: '/pic-2.jpeg', 
+      image: `${baseUrl}pic-2.jpeg`, 
       caption: 'Favorite picture of mine 🧿' 
     },
     { 
-      image: '/pic-3.jpeg', 
+      image: `${baseUrl}pic-3.jpeg`, 
       caption: 'Our perfect moments together ✨' 
     },
     { 
-      image: '/pic-4.jpeg', 
+      image: `${baseUrl}pic-4.jpeg`, 
       caption: 'Adventures with my favorite person 🗻' 
     },
     { 
-      image: '/pic-5.jpeg', 
+      image: `${baseUrl}pic-5.jpeg`, 
       caption: 'Your smile lights up my world 😊' 
     },
     { 
-      image: '/pic-6.jpeg', 
+      image: `${baseUrl}pic-6.jpeg`, 
       caption: 'Forever grateful for you 💖' 
     },
   ];
